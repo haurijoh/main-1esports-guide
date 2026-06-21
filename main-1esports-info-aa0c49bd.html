@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一竞技 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      background: #faf7f2;
+      color: #2e2a24;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: #fefcf8;
+      padding: 3rem 2.5rem;
+      border-radius: 28px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+      transition: all 0.2s;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      color: #1f1c17;
+    }
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #6b6156;
+      margin-bottom: 2rem;
+      border-left: 4px solid #d3c8b8;
+      padding-left: 1rem;
+    }
+
+    .hero-tagline {
+      background: #f2ede6;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      margin: 2rem 0 2.5rem 0;
+      font-size: 1rem;
+      color: #3c352d;
+      border: 1px solid #e5dbd0;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 480;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #ede4d9;
+      color: #2b2620;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-top: 1.6rem;
+      margin-bottom: 0.4rem;
+      color: #3d352c;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    .highlight-card {
+      background: #f7f2eb;
+      border-radius: 18px;
+      padding: 1.6rem 2rem;
+      margin: 1.8rem 0;
+      border: 1px solid #e7ddd2;
+    }
+
+    .highlight-card ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 0.3rem;
+    }
+
+    .highlight-card li {
+      padding: 0.45rem 0 0.45rem 1.8rem;
+      position: relative;
+      color: #3d352c;
+    }
+
+    .highlight-card li::before {
+      content: "·";
+      position: absolute;
+      left: 0.2rem;
+      color: #a5927c;
+      font-weight: 700;
+    }
+
+    .faq-item {
+      margin-top: 1.2rem;
+      padding: 1rem 1.4rem;
+      background: #fcf9f5;
+      border-radius: 16px;
+      border-left: 5px solid #dacebf;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      color: #2f2922;
+    }
+
+    .faq-answer {
+      color: #5b5247;
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 0.5rem 1.6rem;
+      border: 1.5px solid #b9aa98;
+      border-radius: 40px;
+      color: #2e2720;
+      text-decoration: none;
+      font-weight: 460;
+      font-size: 0.95rem;
+      transition: background 0.2s, border-color 0.2s;
+      margin-top: 0.2rem;
+    }
+
+    .btn-outline:hover {
+      background: #ede4d9;
+      border-color: #8f7c68;
+    }
+
+    .footer-links {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5d9cd;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.8rem;
+      font-size: 0.9rem;
+      color: #6b6156;
+    }
+
+    .footer-links a {
+      color: #4d4237;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .footer-links a:hover {
+      border-bottom: 1px solid #a5927c;
+    }
+
+    .footer-note {
+      margin-top: 0.8rem;
+      color: #8f7e6d;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+      .container {
+        padding: 2rem 1.2rem;
+        border-radius: 20px;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      .highlight-card {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- hero 区 -->
+    <h1>一竞技</h1>
+    <div class="subhead">稳定 · 清晰 · 从入口到页面，每一步都踏实</div>
+
+    <div class="hero-tagline">
+      无论是初次了解还是日常使用，一个可靠、直接的入口始终重要。<br>
+      <a href="https://main-1esports.com" style="color:#3b3229; font-weight: 500; text-decoration: underline 1px solid #b9aa98; text-underline-offset: 3px;">一竞技</a> 正是这样一处存在——页面结构简明，内容呈现朴实，没有多余的跳转与干扰。
+    </div>
+
+    <!-- 优势区 -->
+    <h2>为什么这样的入口值得留意</h2>
+    <div class="highlight-card">
+      <ul>
+        <li><strong>直达而不绕路</strong> —— 减少中间环节，打开即见核心内容，操作路径更短。</li>
+        <li><strong>版式一贯清晰</strong> —— 从导航到信息区块，保持一致的视觉节奏，阅读负担低。</li>
+        <li><strong>响应与适配</strong> —— 无论是桌面还是移动设备，页面均能自然调整，不会丢失信息层级。</li>
+        <li><strong>克制的信息密度</strong> —— 没有过度推销或满屏弹窗，用户能自主选择浏览节奏。</li>
+      </ul>
+    </div>
+
+    <!-- 说明区：页面如何组织 -->
+    <h2>页面说明 · 内容结构</h2>
+    <p>
+      本次改版后的 <strong>一竞技</strong> 介绍页将重点放在 <em>稳定入口</em> 与 <em>信息易读性</em> 上。页面从上至下依次为：<br>
+      简明标题区 → 概述与引导句 → 优势要点 → 常见问题摘要 → 底部关联链接。
+    </p>
+    <p>
+      所有区块采用米白背景配合低饱和度文字，段落之间保留充足间距，引用块与提示框均使用圆润的卡片样式，让视线自然流动。
+    </p>
+
+    <!-- 场景提示 / 引用块风格 -->
+    <div style="background: #f3ede6; border-radius: 18px; padding: 1.2rem 1.8rem; margin: 2rem 0; border: 1px dashed #d2c3b3;">
+      <p style="margin-bottom: 0.2rem; font-style: normal; color: #3c342b;">
+        💡 如果你希望快速了解平台定位、功能模块或更新动态，可以直接通过 <a href="https://main-1esports.com" style="color:#3b3229; font-weight: 500; text-decoration: underline 1px solid #b9aa98; text-underline-offset: 3px;">一竞技</a> 的首页导航浏览。所有主要版块均设有清晰的标题与摘要，减少困惑。
+      </p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见疑问摘要</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">❓ 页面加载速度怎么样？</div>
+      <div class="faq-answer">采用轻量结构，未使用过多第三方资源。首屏内容可在 1–2 秒内加载完毕，移动网络下表现稳定。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">❓ 是否有独立的移动版页面？</div>
+      <div class="faq-answer">当前版式已响应式适配，手机、平板均可获得良好阅读体验。未单独拆分移动端，但布局会随屏幕尺寸自动调整。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">❓ 信息更新频率如何？</div>
+      <div class="faq-answer">内容维护周期不固定，但关键页面的说明与链接会保持有效。建议定期通过 <a href="https://main-1esports.com" style="color:#3b3229; text-decoration: underline 1px solid #b9aa98; text-underline-offset: 3px;">一竞技</a> 查看最新信息。</div>
+    </div>
+
+    <div style="text-align: right; margin-top: 1.2rem;">
+      <a href="#" class="btn-outline">查看更多 FAQ →</a>
+    </div>
+
+    <!-- 底部链接区 -->
+    <div class="footer-links">
+      <span><a href="https://main-1esports.com">一竞技</a> · 首页</span>
+      <span><a href="#">关于我们</a></span>
+      <span><a href="#">使用帮助</a></span>
+      <span><a href="#">内容说明</a></span>
+      <span><a href="#">隐私声明</a></span>
+      <div class="footer-note">
+        © 2025 · 本页面仅作为稳定入口与功能介绍，所有信息以实际页面为准。
+      </div>
+    </div>
+  </div>
+</body>
+</html>
